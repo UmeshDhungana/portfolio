@@ -3,7 +3,11 @@
 
 $mainColor: #F97300;
 $primaryWhite: #fff;
+$primaryBlack: #000;
+$primaryRed: #ef4035;
+$primaryHoverRed: #f33501;
+$mainFont : 'Roboto Condensed', sans-serif;
 
 body {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: $mainFont;
 }

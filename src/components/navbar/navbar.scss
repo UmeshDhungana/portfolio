@@ -2,10 +2,12 @@
 
 .navbar {
   background-color : $mainColor;
+  z-index: 2;
 }
 
 .logo {
   width: 15rem;
+  height: 10vh;
 }
 
 nav a.nav-link {
@@ -31,8 +33,15 @@ nav ul li {
 
 .navbar-brand {
   max-width: 17rem;
-  height: 5.5rem;
+  height: 4.35rem;
   padding: 0;
+  // overflow: auto;
+}
+
+@media(max-width: 768px) {
+  .navbar-brand{
+    width: 7rem;
+  }
 }
 
 // .navbar-nav > li > a.active, .navbar-nav > li > a:focus {
