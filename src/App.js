@@ -1,7 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Particles from 'react-tsparticles';
+
 import Navbar from './components/navbar/Navbar';
 import Header from './components/header/Header';
-import Particles from 'react-tsparticles';
+import About from './components/about-me/About';
 
 function App() {
   return (
@@ -9,7 +11,7 @@ function App() {
       <Particles 
         // id="tsparticles"
         className='particle-canvas'
-        options={{
+        params={{
           particles: {
             shape: {
               type: "circle",
@@ -42,13 +44,14 @@ function App() {
                 enable: true,
                 value_area: 900
               }
-            }
+            },         
           }
         }}
         
       />
       <Navbar />
       <Header />
+      <About />
     </>
   );
 }
