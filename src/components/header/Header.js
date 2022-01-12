@@ -5,6 +5,7 @@ import Typed from "react-typed"
 
 const Header = () => {
   return (
+    
     <div className="header-wrap">
       <div className="main-info">
         <h1> I am Umesh Dhungana..</h1>
