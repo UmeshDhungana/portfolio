@@ -6,6 +6,7 @@ import Navbar from './components/navbar/Navbar';
 import Header from './components/header/Header';
 import About from './components/about-me/About';
 import Interest from './components/interest/Interest';
+import Portfolio from './components/portfolio/Portfolio';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Header />
       <About />
       <Interest />
+      <Portfolio />
     </>
   );
 }
