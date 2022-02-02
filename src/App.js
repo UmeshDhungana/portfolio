@@ -7,6 +7,7 @@ import Header from './components/header/Header';
 import About from './components/about-me/About';
 import Interest from './components/interest/Interest';
 import Portfolio from './components/portfolio/Portfolio';
+import Contact from './components/contact/Contact';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <About />
       <Interest />
       <Portfolio />
+      <Contact />
     </>
   );
 }

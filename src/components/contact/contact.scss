@@ -1,0 +1,117 @@
+@import "../../global.scss";
+
+.contact {
+  background-color: $primaryLightGray;
+  padding: 3rem 0;
+}
+
+.contact h1 {
+  color: $mainColor;
+  padding: 1.3rem 0;
+  text-transform: uppercase;
+}
+
+.contact p {
+  // color: $primaryDark;
+}
+
+.btn-main-contact {
+  border: 1px solid $primaryRed;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: $primaryBlack;
+  margin: 2rem;
+}
+
+.btn-main-contact:hover {
+  text-decoration: none;
+  background-color: $primaryHoverRed;
+  color: $primaryWhite;
+  transition: .2s ease-in-out;
+}
+
+.contact input, .contact textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+  border: 0;
+  border-bottom: 0.125rem solid $primaryDarkGray;
+  border-radius: 0;
+  color: $mainColor;
+  outline: 0 !important;
+  box-shadow: none !important;
+  margin-bottom: 1rem;
+  padding-left: 0;
+}
+
+.contact .container {
+  padding: 4rem 0;
+}
+
+.contact input:focus, .contact textarea:focus {
+  background: transparent;
+  color: $mainColor;
+  border-bottom: 0.125rem solid $primaryDarkGray;
+}
+
+.contact textarea {
+  height: 12.2rem !important;
+}
+
+.contact-btn {
+  margin: 1rem 0 0 0;
+  width: 100%;
+  background: none;
+}
+
+.line {
+  position: relative;
+  top: -0.8rem;
+  width: 0;
+  height: 0.125rem;
+  background: $mainColor;
+  display: inline-block;
+}
+
+input:focus+.line, textarea:focus+.line {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+input.form-control {
+  margin: -0.3rem 0;
+}
+
+textarea.form-control {
+  margin: -0.3rem 0;
+}
+
+.error-message {
+  color: $primaryRed;
+  text-align: left;
+}
+
+.success-message {
+  font-weight: 900;
+  color: $primaryGreen;
+}
+
+
+
+////////////
+
+@media(max-width: 768px) {
+  .contact {
+    overflow-x: hidden;
+  }
+
+  .contact .container {
+    padding: 0 1rem;
+  }
+
+  .contact p {
+    padding: 0 0.5rem;
+  }
+}
