@@ -38,6 +38,28 @@
   margin-left: 1.2 rem;
 }
 
+.download-container {
+  margin-top: 3rem;
+  margin-left: 6rem;
+}
+
+.about-download-btn {
+  border: 2px solid $primaryRed;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: $primaryBlack;
+  font-weight: 900;
+  margin: 2rem;
+}
+
+.about-download-btn:hover {
+  text-decoration: none;
+  background-color: $primaryHoverRed;
+  color: $primaryWhite;
+  transition: .2s ease-in-out;
+}
+
 @media(max-width: 468px) {
   .profile-pic {
     width: 10rem;

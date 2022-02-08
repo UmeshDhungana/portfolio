@@ -24,6 +24,14 @@ const Portfolio = () => {
     </>
     )
     PopupboxManager.open({content})
+    PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          text: "Decoding Captcha Project",
+        },
+      },
+    });
   }
 
   const configPopBoxCaptcha = {
@@ -45,6 +53,14 @@ const Portfolio = () => {
       </>
       )
       PopupboxManager.open({content})
+      PopupboxManager.update({
+        content,
+        config: {
+          titleBar: {
+            text: "InstaUnfollowers List Automation",
+          },
+        },
+      });
     }
   
     const configPopBoxUnfollow = {
@@ -66,6 +82,14 @@ const openPopBoxCalculator = () => {
   </>
   )
   PopupboxManager.open({content})
+  PopupboxManager.update({
+    content,
+    config: {
+      titleBar: {
+        text: "Calculator App using JS",
+      },
+    },
+  });
 }
 
 const configPopBoxCalculator = {
@@ -79,7 +103,7 @@ const configPopBoxCalculator = {
 
 
   return (
-    <div className='portfolio-wrapper'>
+    <div id='portfolio' className='portfolio-wrapper'>
       <div className='container'>
         <h1 className='text-uppercase text-center py-5'>Portfolio</h1>
         <div className='image-box-wrapper row justify-content-center'>

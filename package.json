@@ -17,6 +17,7 @@
     "react-hook-form": "^7.25.3",
     "react-popupbox": "^2.0.8",
     "react-scripts": "5.0.0",
+    "react-scroll": "^1.8.4",
     "react-tsparticles": "^1.39.0",
     "react-typed": "^1.2.0",
     "reactjs-popup": "^2.0.5",

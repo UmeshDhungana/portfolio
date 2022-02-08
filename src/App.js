@@ -8,6 +8,7 @@ import About from './components/about-me/About';
 import Interest from './components/interest/Interest';
 import Portfolio from './components/portfolio/Portfolio';
 import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Interest />
       <Portfolio />
       <Contact />
+      <Footer />
     </>
   );
 }

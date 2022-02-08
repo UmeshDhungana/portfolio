@@ -9,7 +9,7 @@ import { faBolt, faCode, faRobot } from '@fortawesome/free-solid-svg-icons'
 
 const Interest = () => {
   return (
-    <div className='interests'>
+    <div id='interest' className='interests'>
       <h1 className='py-5'>My Interests</h1>
         <div className='container'>
           <div className='row'>

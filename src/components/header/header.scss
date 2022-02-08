@@ -5,7 +5,7 @@
   background: url("../../assets/background.png") no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .main-info {
@@ -36,7 +36,7 @@
 
 .typed-text {
   font-size: 2rem;
-  color: $primaryWhite;
+  color: $primaryDark;
 }
 
 @media(max-width: 768px) {
@@ -46,11 +46,12 @@
 }
 
 .main-info-btn {
-  border: 1px solid $primaryRed;
+  border: 2px solid $primaryRed;
   text-transform: uppercase;
   border-radius: 0;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
   color: $primaryBlack;
+  font-weight: 900;
   margin: 2rem;
 }
 
