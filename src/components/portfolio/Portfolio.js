@@ -3,6 +3,7 @@ import "./portfolio.scss"
 import captcha from "../../assets/portfolio/captcha.jpeg"
 import unfollow from "../../assets/portfolio/unfollow-insta.jpeg"
 import calculator from "../../assets/portfolio/calculator.png"
+import imdb from "../../assets/portfolio/imdb.jpeg"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearchPlus } from '@fortawesome/free-solid-svg-icons'
@@ -101,6 +102,35 @@ const configPopBoxCalculator = {
   fadeInSpeed: 500,
 }
 
+//IMDB
+const openPopBoxImdb = () => {
+  const content = (
+    <>
+    <img className='portfolio-img-popup' src={imdb} alt='Calculator Image...'/>
+    <p>This project scraps data from IMDB and tries to replicates the result from IMDB official site.</p>
+    <b>GitHub:</b><a className='hyper-link' onClick={() => window.open("https://github.com/UmeshDhungana/ImdbWebSrcapping")}>https://github.com/UmeshDhungana/ImdbWebSrcapping</a>
+  </>
+  )
+  PopupboxManager.open({content})
+  PopupboxManager.update({
+    content,
+    config: {
+      titleBar: {
+        text: "IMDB Web Scrapping",
+      },
+    },
+  });
+}
+
+const configPopBoxImdb = {
+  titleBar: {
+    enable: true,
+    text: "IMDB Web Scrapping"
+  },
+  fadeIn: true,
+  fadeInSpeed: 500,
+}
+
 
   return (
     <div id='portfolio' className='portfolio-wrapper'>
@@ -125,8 +155,8 @@ const configPopBoxCalculator = {
             <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
           </div>
 
-          <div className='portfolio-image-box col'>
-            <img className='portfolio-image' src={unfollow} alt='Insta unfollow Image'/>
+          <div className='portfolio-image-box col' onClick={openPopBoxImdb}>
+            <img className='portfolio-image' src={imdb} alt='Insta unfollow Image'/>
             <div className='over-flow'></div>
             <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
           </div>
@@ -135,6 +165,7 @@ const configPopBoxCalculator = {
       <PopupboxContainer {...configPopBoxCaptcha}/>
       <PopupboxContainer {...configPopBoxUnfollow}/>
       <PopupboxContainer {...configPopBoxCalculator}/>
+      <PopupboxContainer {...configPopBoxImdb}/>
 
     </div>
   )
