@@ -1,0 +1,67 @@
+@import "../../global.scss";
+
+.about-main {
+  background-color: $primaryWhite;
+  padding: 3rem 0;
+}
+
+// .particle-canvas {
+//   top: 0;
+//   left: 0;
+//   height: 100%;
+//   width: 100%;
+//   overflow: hidden;
+//   z-index: -1;
+// }
+
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 17rem;
+  border-radius: 50%;
+  padding: .3rem;
+  border: 1px solid $mainColor;
+}
+
+.about-heading {
+  color: $mainColor;
+  text-transform: uppercase;
+  // text-align: center;
+}
+
+.about-content {
+  font-size: 1.5rem;
+  margin-left: 1.2 rem;
+}
+
+.download-container {
+  margin-top: 3rem;
+  margin-left: 6rem;
+}
+
+.about-download-btn {
+  border: 2px solid $primaryRed;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: $primaryBlack;
+  font-weight: 900;
+  margin: 2rem;
+}
+
+.about-download-btn:hover {
+  text-decoration: none;
+  background-color: $primaryHoverRed;
+  color: $primaryWhite;
+  transition: .2s ease-in-out;
+}
+
+@media(max-width: 468px) {
+  .profile-pic {
+    width: 10rem;
+  }
+}

@@ -1,0 +1,84 @@
+@import "../../global.scss";
+
+.header-wrap {
+  position: relative;
+  background: url("../../assets/background.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-family: $mainFont;
+  z-index: 1;
+}
+
+.main-info h1 {
+  color: $mainColor;
+  text-transform: uppercase;
+}
+
+@media(max-width: 768px) {
+  .main-info h1{
+    font-size: 1.7rem !important;
+  }
+}
+
+.typed-text {
+  font-size: 2rem;
+  color: $primaryDark;
+}
+
+@media(max-width: 768px) {
+  .typed-text{
+    font-size: 1.3rem !important;
+  }
+}
+
+.main-info-btn {
+  border: 2px solid $primaryRed;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: $primaryBlack;
+  font-weight: 900;
+  margin: 2rem;
+}
+
+.main-info-btn:hover {
+  text-decoration: none;
+  background-color: $primaryHoverRed;
+  color: $primaryWhite;
+  transition: .2s ease-in-out;
+}
+
+// #tsparticles {
+//   position: absolute;
+//   height: 100vh;
+//   width: 100vw;
+//   z-index: 1;
+// }
+
+.particle-canvas {
+  position: absolute !important;
+  height: 100vh !important;
+  width: 100vw !important;
+  z-index: 1 !important; 
+}
+
+
+@media(max-width: 768px) {
+  .particle-canvas {
+    display: none;
+  }
+}

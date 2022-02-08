@@ -1,0 +1,86 @@
+@import "../../global.scss";
+
+.portfolio-wrapper {
+  background-color: $primaryWhite;
+  padding: 3rem 0;
+}
+
+.portfolio-wrapper h1 {
+  color: $mainColor;
+}
+
+.portfolio-image {
+  width: 17rem;
+  height: 15rem;
+  border: 1px solid $mainColor;
+  padding: 0 0.5rem;
+}
+
+.portfolio-image-box {
+  position: relative;
+  margin: 1rem;
+}
+
+.over-flow {
+  position: absolute;
+  opacity: 0;
+  background: $primaryBlack;
+  width: 17rem;
+  height: 15rem;
+  top: 0;
+  border: 1px solid $primaryRed;
+  cursor: pointer;
+}
+
+.portfolio-image-box:hover .over-flow {
+  opacity: 60%;
+  transition: 0.3s ease-in-out;
+}
+
+.portfolio-icon {
+  position: absolute;
+  opacity: 0;
+  margin-left: -9rem;
+  margin-top: 7.5rem;
+  color: $mainColor;
+  font-size: 1.5rem;
+}
+
+.portfolio-image-box:hover .portfolio-icon {
+  opacity: 70%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+//popup box 
+.portfolio-img-popup {
+  width: 45rem;
+  padding: 0 0.5rem;
+  height: 30rem;
+}
+
+.hyper-link {
+  cursor: pointer;
+  color: $mainColor;
+}
+
+.hyper-link:hover {
+  color: $primaryRed;
+}
+
+@media(max-width: 768px) {
+  .portfolio-img-popup {
+    width: 100%;
+  }
+}
+
+@media(max-height: 570px) {
+  .popupbox-wrapper {
+    height: 100%;
+  }
+
+  .portfolio-img-popup {
+    width: 50%;
+  }
+}
+

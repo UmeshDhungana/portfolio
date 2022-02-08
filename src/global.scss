@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+
+$mainColor: #F97300;
+
+$primaryWhite: #ffffff;
+$primaryGray: #ccd1d9;
+$primaryLightGray: #f4f4f4;
+$primaryDarkGray: #666666;
+$primaryBlack: #000000;
+$primaryDark: #343a40;
+$primaryRed: #ef4035;
+$primaryHoverRed: #f33501;
+$primaryGreen: #008000;
+
+$mainFont : 'Roboto Condensed', sans-serif;
+
+body {
+  font-family: $mainFont;
+}

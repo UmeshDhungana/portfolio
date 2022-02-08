@@ -1,0 +1,56 @@
+@import "../../global.scss";
+
+.navbar {
+  background-color : $mainColor;
+  z-index: 2;
+}
+
+.logo {
+  width: 15rem;
+  height: 10vh;
+}
+
+nav a.nav-link {
+  font-size: 0.8rem;
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.nav-link {
+  color: $primaryWhite !important;
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+  border-top: 0.2rem solid $mainColor;
+}
+
+// .navbar-nav > li > a {
+//   color: $primaryWhite !important;
+// }
+
+.navbar-brand {
+  max-width: 17rem;
+  height: 4.35rem;
+  padding: 0;
+}
+
+@media(max-width: 768px) {
+  .navbar-brand{
+    width: 7rem;
+  }
+
+  .logo {
+    width: 10rem;
+  }
+}
+
+// .navbar-nav > li > a.active, .navbar-nav > li > a:focus {
+//   border-top: 0.2rem solid $primaryWhite;
+// }
+
+.nav-item a.active, .nav-item a:focus, .nav-item a:hover {
+  border-top: 0.2rem solid $primaryWhite;
+}
